@@ -45,6 +45,25 @@ It's a pretty straightforward installation process, but if you want step-by-step
 - Click Create
 
 
+
+### Configuration:
+- 
+
 ### Configuration:
 
 For this section of the process, I've used the book "Linux Basics for Hackers" by OccupyTheWeb. I won't share the PDF file due to ethical reasons but I'll do a summary of the steps:
+- Choose Graphic install
+- ![image](https://github.com/user-attachments/assets/c06f0c14-804e-43b8-9104-90dde19d6577)
+- Choose your hostname for the system
+- ![image](https://github.com/user-attachments/assets/369f67ac-959b-45b4-bb76-9fcb040737cb)
+- Define your root credentials
+- Choose your timezone and languages as you prefer
+- Choose Guided - use entire disk
+- Select All files in one partition
+- Select Finish partitioning and write changes to disk and select Yes afterwards
+- Network mirror isn't required so click No
+- Select Yes to install GRUB boot loader
+  - Enter device manually and select the drive
+- Login as root and you're done!
+
+
