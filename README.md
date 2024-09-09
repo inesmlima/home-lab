@@ -62,7 +62,10 @@ For this section of the process, I've used the book "Linux Basics for Hackers" b
 - Login as root and you're done!
 
 
-##Installing and setting up Windows 10
+
+
+
+## Installing and setting up Windows 10
 
 ### Installation:
 - Start by downloading the Media Creation Tool (https://www.microsoft.com/en-ca/software-download/windows10)
