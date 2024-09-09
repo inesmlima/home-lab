@@ -6,10 +6,9 @@ My goal is to create a lab completely free with open-source resources so everyon
 # Content:
 - Hypervisor: VirtualBox
 - Attack machine: Kali Linux
-- Vulnerable machines: Ubuntu and Windows 10
-- Firewall: PfSense
+- Vulnerable machines: Windows 10
 
-(this will be edited during the process)
+(this might be edited in the future)
 
 
 
@@ -45,10 +44,6 @@ It's a pretty straightforward installation process, but if you want step-by-step
 - Click Create
 
 
-
-### Configuration:
-- 
-
 ### Configuration:
 
 For this section of the process, I've used the book "Linux Basics for Hackers" by OccupyTheWeb. I won't share the PDF file due to ethical reasons but I'll do a summary of the steps:
@@ -67,3 +62,28 @@ For this section of the process, I've used the book "Linux Basics for Hackers" b
 - Login as root and you're done!
 
 
+##Installing and setting up Windows 10
+
+### Installation:
+- Start by downloading the Media Creation Tool (https://www.microsoft.com/en-ca/software-download/windows10)
+- Select Yes and then Accept on the agreements page
+- Choose the option Create installation media
+- Customize the settings as your prefer
+- Choose the option ISO file
+- Create a Windows VM and import the downloaded ISO file
+- (I chose the skip unattended installation)
+
+This part of the proccess is dependend on your host machine's resources, please be mindful of that when following the steps
+
+- Base Memory: 2048 MB
+- 1 CPU
+- Disk size: 50 GB
+- Click Next and then Finish
+
+
+### Configuration:
+- Start the machine and click I don't have a product key
+- Select Windows 10 Pro (or other OS you've downloaded)
+- Accept license terms
+- Custom installation (personal preference)
+- Click Next and wait for it to complete installing
