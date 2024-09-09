@@ -20,7 +20,6 @@ My goal is to create a lab completely free with open-source resources so everyon
 
 
 
-
 ## Downloading & Installing Oracle VM VirtualBox
 
 For the purpose of this lab, I’ll be using Oracle VM VirtualBox as my hypervisor. It's an open-source software that you can download [here](https://www.virtualbox.org/)
@@ -64,7 +63,6 @@ For this section of the process, I've used the book "Linux Basics for Hackers" b
 
 
 
-
 ## Installing and setting up Windows 10
 
 ### Installation:
@@ -90,3 +88,28 @@ This part of the proccess is dependend on your host machine's resources, please 
 - Accept license terms
 - Custom installation (personal preference)
 - Click Next and wait for it to complete installing
+
+
+
+## Virtual Machines' Network Configuration
+
+Disclaimer: the network configuration will change depending on what's your final goal for the homelab, testing tools and monitoring doesn't require the same specifications as malware analysis. Either way, take a screenshot of your different VM's before proceeding to have a secure baseline in case something breaks or gets infected.
+As a personal preference, I've set up my VMs in an Internal Network without Internet access:
+
+- Go to setting on the Windows machine and select Network
+- Choose Internal Network and name it
+- On the Kali machine, repeat the 1st step and choose the network you've named
+
+- Start your Windows machine and righ-click on the globe icon
+- Select Open Network and Internet settings
+- Select Change adapter options
+- Righ-click on Ethernet and choose Properties
+- Click on IPv4 and choose Properties
+- Assign a static IP of your choice
+
+- Start your Kali machine amd righ-click on the network icon
+- Select Edit Connections
+- Click on wired connection and then Settings
+- Choose IPv4 settings and change the method to Manual
+- Assign a static IP of your choice (make sure it's withing the same network as the Windows machine)
+- Ping the machines to ensure connectivity
